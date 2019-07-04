@@ -30,17 +30,28 @@ function TapSelection() {
   }
 
   return (
- 
       <div className="beerList">
+        <button>Sort Kegs By Alcohol Content</button>
+        <button>Sort Kegs By Price</button>
         {kegs.map((keg, index) =>
           <KegProp name={keg.name}
-            brand={keg.brand}
-            price={keg.price}
-            alcoholContent={keg.alcoholContent}
-            key={index} />
+          brand={keg.brand}
+          price={keg.price}
+          alcoholContent={keg.alcoholContent}
+          key={index} />
           )}
+        <form action="addKeg(name, brand, price, alcoholContent)">
+          Name
+          <input id="name" type="text" required/>
+          Brand
+          <input id="brand" type="text" required/>
+          Price
+          <input id="price" type="text" required/>
+          Alcohol Content
+          <input id="alcoholContent" type="text" required/>
+          <button type="submit">Add A new Keg</button>
+        </form>
       </div>
-
   );
 }
 

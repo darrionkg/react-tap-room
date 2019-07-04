@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
-import { Keg } from './keg';
+import React from 'react';
+import { Keg } from './Keg';
+import PropTypes from 'prop-types';
+import KegProp from './KegProp';
 
 function TapSelection() {
 
@@ -28,22 +30,17 @@ function TapSelection() {
   }
 
   return (
-    <div>
+ 
       <div className="beerList">
-        {/* loop */}
-        <div className="cardHeader">
-          <h2></h2>
-        </div>
-        <div className="cardBody">
-          <ol>
-            <li>Brand: </li>
-            <li>Price: </li>
-            <li>Alcohol Content: </li>
-          </ol>
-          <button>Sell Pint</button>
-        </div>
+        {kegs.map((keg, index) =>
+          <KegProp name={keg.name}
+            brand={keg.brand}
+            price={keg.price}
+            alcoholContent={keg.alcoholContent}
+            key={index} />
+          )}
       </div>
-    </div>
+
   );
 }
 

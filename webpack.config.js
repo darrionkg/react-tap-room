@@ -18,7 +18,7 @@ module.exports = {
   },
 
   resolve: {
-    extensions: [ '.js', '.jsx' ]
+    extensions: ['.js', '.jsx']
   },
 
   devtool: '#source-map',
@@ -31,6 +31,20 @@ module.exports = {
 
   module: {
     rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|gif|jp(e*)g|svg)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 8000,
+            name: 'images/[hash]-[name].[ext]'
+          }
+        }
+      },
       {
         test: /\.jsx?$/,
         enforce: "pre",

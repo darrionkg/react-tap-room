@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export class TapSelection extends Component {
   render() {
@@ -6,8 +6,8 @@ export class TapSelection extends Component {
       <div>
         
       </div>
-    )
+    );
   }
 }
 
-export default TapSelection
+export default TapSelection;

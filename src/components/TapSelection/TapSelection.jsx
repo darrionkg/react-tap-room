@@ -38,9 +38,11 @@ function TapSelection() {
           brand={keg.brand}
           price={keg.price}
           alcoholContent={keg.alcoholContent}
+          pints={keg.pints}
           key={index} />
           )}
-        <form action="addKeg(name, brand, price, alcoholContent)">
+          {/* Haven't gotten the form to work yet */}
+        <form /*onSubmit={this.addKeg(name, brand, price, alcoholContent)}*/>
           Name
           <input id="name" type="text" required/>
           Brand

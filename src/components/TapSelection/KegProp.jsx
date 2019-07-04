@@ -11,6 +11,7 @@ function KegProp(props){
         <p><em>{props.brand}</em></p>
         <p><em>{props.price}</em></p>
         <p><em>{props.alcoholContent}</em></p>
+        <p><em>{props.pints}</em></p>
         <hr/>
       </div>
     </div>

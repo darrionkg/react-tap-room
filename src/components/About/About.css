@@ -1,3 +1,30 @@
 .aboutContainer {
   clear: both;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutContainer p {
+
+}
+
+.fb-row {
+  display: flex;
+  flex-direction: row;
+}
+.floatLeft {
+  margin: 15px;
+  max-width: 250px;
+  max-height: 250px;
+  align: left;
+}
+
+.floatRight {
+  margin: 15px;
+  max-width: 250px;
+  max-height: 250px;
+}
+
+hr {
+  width: 95%;
 }

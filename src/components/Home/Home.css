@@ -1,0 +1,19 @@
+.homeContainer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: url('./../../assets/kegs.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: whitesmoke;
+  z-index: 2;
+}

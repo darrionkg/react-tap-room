@@ -1,13 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './Home.css';
 
-export class Home extends Component {
-  render() {
-    return (
-      <div>
-        <p>Home Page</p>
-      </div>
-    )
-  }
+function Home() {
+  return (
+    <div className="homeContainer">
+      <h1 className="title">Darrion's Taphouse</h1>
+    </div>
+  )
 }
 
 export default Home

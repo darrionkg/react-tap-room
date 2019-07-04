@@ -5,14 +5,17 @@ import { Link } from 'react-router-dom';
 export class Navigation extends Component {
   render() {
     return (
-      <div id="navigation">
-        <nav>
-          <ul>
-            <li className="navInline"><Link to="/">Darrion's Taproom</Link></li>
-            <li className="navInline"><Link to="/about">About Us</Link></li>
-            <li className="navInline"><Link to="/selection">Tap Selection</Link></li>
-          </ul>
-        </nav>
+      <div>
+        <div id="navBar">
+          <nav>
+            <ul>
+              <li className="navInline"><Link className="navLink" to="/">Darrion's Taproom</Link></li>
+              <li className="navInline"><Link className="navLink" to="/about">About Us</Link></li>
+              <li className="navInline"><Link className="navLink" to="/selection">Tap Selection</Link></li>
+            </ul>
+          </nav>
+        </div>
+        <div className="clearNav"></div>
       </div>
     );
   }

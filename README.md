@@ -1,68 +1,47 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# _Taproom_
 
-## Available Scripts
+#### _A taproom located in my basement , 06/14/2019_
 
-In the project directory, you can run:
+#### By _**Darrion Gering**_
 
-### `npm start`
+## Description
+_ My taproom's website, built with React.js_
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Setup/Installation Requirements
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+1. _Clone from GitHub_
+2. _$type cd react-tap-room_
+3. _$type npm install to install packages_
+4. _$type npm run start to start and open the dev server_
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Specs
 
-### `npm run build`
+| Current Behaviors|
+| ------------- |
+| 1. Each keg has a name, brand, price, and alcohol content |
+| 2. The program has a menu list of kegs |
+| 3. An employee can fill out a form to add a new keg to the list |
+| 4. An employee can edit a keg's properties |
+| 5. A patron or an employee can see how many pints are left in a keg |
+| 6. An employee can click a button when selling a pint, decreasing the total pints by 1 |
+| 7. An employee knows when a keg has less than 10 pints left, to know when to replace it |
+| 8. As a patron, all kegs should be color-coded for easy readability |
+| 9. As a patron, I want to be able to sort by alcohol content |
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Support and contact details
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+darrionkg@gmail.com
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+* Javascript
+* html
+* css
+* react
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### License
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+*MIT License*
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Copyright (c) 2019 **_Darrion Gering_**

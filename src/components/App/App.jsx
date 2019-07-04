@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer';
 import { Route, Switch } from 'react-router-dom';
 import About from '../About/About';
 import Home from './../Home/Home';
-//import TapSelection from './../TapSelection';
+import TapSelection from './../TapSelection/TapSelection';
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/about' component={About} />
+        <Route path='/selection' component={TapSelection }/>
       </Switch>
     </div>
   );

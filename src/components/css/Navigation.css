@@ -1,0 +1,13 @@
+.navInline {
+  display: inline-block;
+  width: 100%;
+  height: 10%;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.navInline a:hover {
+  opacity: 50%;
+}

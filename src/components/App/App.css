@@ -1,0 +1,7 @@
+.mainContainer {
+  font-family: 'Mate', serif;
+}
+
+.mainContainer h1, .mainContainer h2 {
+  font-family: 'Rye', cursive;
+}

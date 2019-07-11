@@ -6,10 +6,11 @@ import { Route, Switch } from 'react-router-dom';
 import About from '../About/About';
 import Home from './../Home/Home';
 import TapSelection from './../TapSelection/TapSelection';
+import './../../assets/css/fonts.css';
 
 function App() {
   return (
-    <div>
+    <div className="mainContainer">
       <header>
         <Navigation />
       </header>

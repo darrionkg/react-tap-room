@@ -1,6 +1,7 @@
 #navBar {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: row;
   z-index: 1;
   top: 0;
   margin: 0;
@@ -35,4 +36,30 @@
 .clearNav {
   width: 100%;
   height: 1px;
+}
+
+.homeButton {
+  display: flex;
+  position: absolute;
+  left: 2em;
+  flex-direction: wrap;
+  width: 15%;
+  height: 50px;
+}
+
+.homeButton a {
+  line-height: -5em;
+}
+.smallIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.linkContainer {
+  width: 80%;
+}
+
+img {
+  position: absolute;
+  top: 0;
 }

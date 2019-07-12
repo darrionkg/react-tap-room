@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 export class Keg extends Component {
   constructor(name, brand, price, alcoholContent) {
+    super();
     this.name = name;
     this.brand = brand;
     this.price = price;
@@ -41,7 +42,7 @@ export class Keg extends Component {
       return 'green';
     }
   }
-  
+
   render() {
     return (
       <div>

@@ -17,3 +17,13 @@
   color: whitesmoke;
   z-index: 2;
 }
+
+.hoursContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: auto;
+}
+.hours {
+  font-size: 16px;
+}

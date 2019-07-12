@@ -9,9 +9,10 @@ export class Navigation extends Component {
         <div id="navBar">
           <nav>
             <ul>
-              <li className="navInline"><Link className="navLink" to="/">Darrion's Taproom</Link></li>
+              <li className="navInline"><Link className="navLink" to="/">D's Brewskis</Link></li>
               <li className="navInline"><Link className="navLink" to="/about">About Us</Link></li>
               <li className="navInline"><Link className="navLink" to="/selection">Tap Selection</Link></li>
+              <li className="navInline"><Link className="navLink" to="#">Sign In</Link></li>
             </ul>
           </nav>
         </div>

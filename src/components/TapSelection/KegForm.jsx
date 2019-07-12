@@ -43,7 +43,7 @@ function KegProp(props){
           type="text"
           required
           ref={(input) => {_price = input;}}
-            />
+          />
           Alcohol Content
           <input 
           id="alcoholContent" 

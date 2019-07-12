@@ -23,7 +23,7 @@ KegProp.propTypes = {
   brand: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
   alcoholContent: PropTypes.number.isRequired,
-}
+};
 // kegProp: PropTypes.instanceOf(Keg);
 
 export default KegProp;

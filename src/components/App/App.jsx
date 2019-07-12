@@ -15,7 +15,7 @@ export class App extends Component {
     super();
     this.state = {
       kegList: []
-    }
+    };
   }
 
 

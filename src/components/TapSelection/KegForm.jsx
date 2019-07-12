@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Keg.css';
 
-function KegProp(props){
+function KegForm(props){
   let _name = null;
   let _brand = null;
   let _price = null;
@@ -11,54 +11,52 @@ function KegProp(props){
   function handleNewKeg() {
     event.preventDefault();
     props.addKeg(
-    {
-      name: _name.value,
-      brand: _brand.value,
-      price: _price.value,
-      alcoholContent: _alcoholContent.value
-    }      
-    )
+      {
+        name: _name.value,
+        brand: _brand.value,
+        price: _price.value,
+        alcoholContent: _alcoholContent.value
+      }      
+    );
   }
 
 
   return (
     <div>
-      <div >
-        <form onSubmit={this.handleNewKeg()}>
-          Name
-          <input 
+      <form onSubmit={this.handleNewKeg()}>
+        Name
+        <input 
           id="name" 
           type="text" 
           required
           ref={(input) => {_name = input;}}
-          />
-          Brand
-          <input id="brand" 
+        />
+        Brand
+        <input id="brand" 
           type="text" 
           required
           ref={(input) => {_brand = input;}}
-          />
-          Price
-          <input id="price"
+        />
+        Price
+        <input id="price"
           type="text"
           required
           ref={(input) => {_price = input;}}
-          />
-          Alcohol Content
-          <input 
+        />
+        Alcohol Content
+        <input 
           id="alcoholContent" 
           type="text" 
           required
           ref={(input) => {_alcoholContent = input;}}
-          />
-          <button type="submit">Add A new Keg</button>
-        </form>
-        <hr/>
-      </div>
+        />
+        <button type="submit">Add A new Keg</button>
+      </form>
+      <hr/>
     </div>
   );
 }
 
 KegForm.propTypes = {
   addKeg: PropTypes.func
-}
+};

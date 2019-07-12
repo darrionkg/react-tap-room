@@ -26,20 +26,20 @@ function TapSelection() {
   }
 
   return (
-      <div className="beerList">
-        <button onClick={sortKegsByAlcoholContent()}>Sort Kegs By Alcohol Content</button>
-        <button onClick={sortKegsByPrice()}>Sort Kegs By Price</button>
-        {kegs.map((keg, index) =>
-          <KegProp name={keg.name}
+    <div className="beerList">
+      <button onClick={sortKegsByAlcoholContent()}>Sort Kegs By Alcohol Content</button>
+      <button onClick={sortKegsByPrice()}>Sort Kegs By Price</button>
+      {kegs.map((keg, index) =>
+        <KegProp name={keg.name}
           brand={keg.brand}
           price={keg.price}
           alcoholContent={keg.alcoholContent}
           pints={keg.pints}
           key={index} />
-          )}
-          {/* Haven't gotten the form to work yet */}
+      )}
+      {/* Haven't gotten the form to work yet */}
 
-      </div>
+    </div>
   );
 }
 

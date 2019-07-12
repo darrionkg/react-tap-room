@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export class Keg extends Component {
   constructor(name, brand, price, alcoholContent) {
@@ -48,8 +48,8 @@ export class Keg extends Component {
       <div>
         
       </div>
-    )
+    );
   }
 }
 
-export default Keg
+export default Keg;

@@ -3,6 +3,7 @@ p {
 }
 
 .formContainer {
+  text-align: center;
   width: 200px;
   height: 250px;
   margin-top: 200px;

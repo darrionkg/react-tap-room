@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Keg.css';
 
-function KegForm(){
+function KegForm(props){
   let _name = null;
   let _brand = null;
   let _price = null;

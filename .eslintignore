@@ -1,4 +1,8 @@
+*.css
 **/**/**/*.css
 **/**/**/*.test.js
 **/**/*.css
 **/**/*.test.js
+*.jpg
+*.jpeg
+*.png

@@ -13,6 +13,10 @@ function TapSelection(props) {
   //   props.kegs = props.kegs.sort((a, b) => a.price-b.price);
   // }
 
+  function handleSellPint() {
+    console.log("handleSellPint tapSelection");
+  }
+
   return (
     <div className="beerList">
       <button >Sort Kegs By Alcohol Content</button>
@@ -23,9 +27,9 @@ function TapSelection(props) {
           price={keg.price}
           alcoholContent={keg.alcoholContent}
           pints={keg.pints}
-          key={index} />
-      )}
-      {/* Haven't gotten the form to work yet */}
+          handleSellPint={handleSellPint()}
+          key={index} />,
+          )}
 
     </div>
   );
@@ -34,5 +38,6 @@ function TapSelection(props) {
 export default TapSelection;
 
 TapSelection.propTypes = {
-  kegs: PropTypes.array
+  kegs: PropTypes.array,
+  handleSellPint: PropTypes.func
 }

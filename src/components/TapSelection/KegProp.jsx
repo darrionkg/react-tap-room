@@ -4,6 +4,11 @@ import './Keg.css';
 
 function KegProp(props){
 
+  function sellPint() {
+    console.log("test");
+    props.handleSellPint;
+  }
+
   return (
     <div>
       <div >
@@ -12,6 +17,7 @@ function KegProp(props){
         <p><em>{props.price}</em></p>
         <p><em>{props.alcoholContent}</em></p>
         <p><em>{props.pints}</em></p>
+        <button onClick={sellPint}>Sell Pint</button>
         <hr/>
       </div>
     </div>
@@ -27,3 +33,7 @@ KegProp.propTypes = {
 // kegProp: PropTypes.instanceOf(Keg);
 
 export default KegProp;
+
+KegProp.propTypes = {
+  handleSellPint: PropTypes.func
+}

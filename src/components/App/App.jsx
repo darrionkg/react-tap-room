@@ -28,6 +28,7 @@ export class App extends Component {
       ]
     };
     this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
+    this.handleSellPint = this.handleSellPint.bind(this);
   }
 
   handleAddingNewKegToList(newKeg){
@@ -36,6 +37,10 @@ export class App extends Component {
     newKegList.push(newKeg);
     console.log(newKegList);
     this.setState({kegList: newKegList});
+  }
+
+  handleSellPint() {
+    console.log("handleSellPint in app")
   }
 
 
@@ -48,7 +53,10 @@ export class App extends Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
-          <Route path='/selection' render={() => <TapSelection kegs = {this.state.kegList}/> }/>
+          <Route path='/selection' render={() => <TapSelection 
+          kegs = {this.state.kegList} 
+          handleSellPint={this.handleSellPint}
+          /> }/>
           <Route path='/newkeg' render={() => <KegForm addKeg = {this.handleAddingNewKegToList}/> }/>
 
         </Switch>

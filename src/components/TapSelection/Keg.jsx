@@ -1,4 +1,6 @@
-export class Keg {
+import React, { Component } from 'react'
+
+export class Keg extends Component {
   constructor(name, brand, price, alcoholContent) {
     this.name = name;
     this.brand = brand;
@@ -39,4 +41,14 @@ export class Keg {
       return 'green';
     }
   }
+  
+  render() {
+    return (
+      <div>
+        
+      </div>
+    )
+  }
 }
+
+export default Keg

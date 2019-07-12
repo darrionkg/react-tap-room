@@ -42,17 +42,7 @@ function TapSelection() {
           key={index} />
           )}
           {/* Haven't gotten the form to work yet */}
-        <form /*onSubmit={this.addKeg(name, brand, price, alcoholContent)}*/>
-          Name
-          <input id="name" type="text" required/>
-          Brand
-          <input id="brand" type="text" required/>
-          Price
-          <input id="price" type="text" required/>
-          Alcohol Content
-          <input id="alcoholContent" type="text" required/>
-          <button type="submit">Add A new Keg</button>
-        </form>
+
       </div>
   );
 }

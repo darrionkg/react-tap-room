@@ -18,6 +18,13 @@ export class App extends Component {
     };
   }
 
+  // handleAddingNewKegToList(newKeg){
+  //   var newKegList = this.state.kegList.slice();
+  //   newKeg.formattedWaitTime = (newKeg.timeOpen).fromNow(true);
+  //   newKegList.push(newKeg);
+  //   this.setState({kegList: newKegList});
+  // }
+
 
   render() {
     return (
@@ -29,7 +36,8 @@ export class App extends Component {
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
           <Route path='/selection' render={() => <TapSelection kegs = {this.state.kegList}/> }/>
-          <Route path='/newkeg' component={KegForm} />
+          <Route path='/newkeg' component={KegForm}/>
+          {/* render={() => <KegForm addKeg = {this.handleAddingNewKegToList}/>} */}
 
         </Switch>
       </div>

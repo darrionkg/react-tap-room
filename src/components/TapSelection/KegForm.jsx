@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Keg.css';
 
-function KegForm(props){
+function KegForm(){
   let _name = null;
   let _brand = null;
   let _price = null;
   let _alcoholContent = null;
 
-  function handleNewKeg() {
+  function handleNewKeg(event) {
     event.preventDefault();
     props.addKeg(
       {
@@ -22,8 +22,8 @@ function KegForm(props){
 
 
   return (
-    <div>
-      <form onSubmit={this.handleNewKeg()}>
+    <div className="formContainer">
+      <form onSubmit={handleNewKeg}>
         Name
         <input 
           id="name" 
@@ -43,7 +43,7 @@ function KegForm(props){
           required
           ref={(input) => {_price = input;}}
         />
-        Alcohol Content
+        Alcohol%
         <input 
           id="alcoholContent" 
           type="text" 
@@ -60,3 +60,5 @@ function KegForm(props){
 KegForm.propTypes = {
   addKeg: PropTypes.func
 };
+
+export default KegForm;

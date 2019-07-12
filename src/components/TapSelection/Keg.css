@@ -1,3 +1,9 @@
 p {
   color: gray;
 }
+
+.formContainer {
+  width: 200px;
+  height: 250px;
+  margin-top: 200px;
+}

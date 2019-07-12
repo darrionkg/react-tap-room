@@ -17,14 +17,9 @@ function TapSelection() {
     new Keg('Topless Blonde', 'Cascade Marys', 6.99, 5.0)
   ];
 
-  function addKeg(name, brand, price, alcoholContent) {
-    let newKeg = new Keg(name, brand, price, alcoholContent);
-    kegs.push(newKeg);
-  }
-
   function sortKegsByAlcoholContent() {
-    kegs = kegs.sort((a, b) => a.alcoholContent-b.alcoholContent);
-    console.log(kegs)
+    let newKegs = kegs.sort((a, b) => a.alcoholContent-b.alcoholContent);
+    console.log(newKegs);
   }
   function sortKegsByPrice() {
     kegs = kegs.sort((a, b) => a.price-b.price);

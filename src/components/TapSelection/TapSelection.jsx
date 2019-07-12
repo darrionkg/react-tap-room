@@ -5,18 +5,18 @@ import KegProp from './KegProp';
 
 function TapSelection(props) {
 
-  function sortKegsByAlcoholContent() {
-    let newKegs = props.kegs.sort((a, b) => a.alcoholContent-b.alcoholContent);
-    console.log(newKegs);
-  }
-  function sortKegsByPrice() {
-    props.kegs = props.kegs.sort((a, b) => a.price-b.price);
-  }
+  // function sortKegsByAlcoholContent() {
+  //   let newKegs = props.kegs.sort((a, b) => a.alcoholContent-b.alcoholContent);
+  //   console.log(newKegs);
+  // }
+  // function sortKegsByPrice() {
+  //   props.kegs = props.kegs.sort((a, b) => a.price-b.price);
+  // }
 
   return (
     <div className="beerList">
-      <button onClick={sortKegsByAlcoholContent()}>Sort Kegs By Alcohol Content</button>
-      <button onClick={sortKegsByPrice()}>Sort Kegs By Price</button>
+      <button >Sort Kegs By Alcohol Content</button>
+      <button >Sort Kegs By Price</button>
       {props.kegs.map((keg, index) =>
         <KegProp name={keg.name}
           brand={keg.brand}

@@ -10,12 +10,14 @@ function KegForm(props){
 
   function handleNewKeg(event) {
     event.preventDefault();
+    let _floatPrice = parseFloat(_price.value);
+    let _floatAlcoholContent = parseFloat(_alcoholContent.value);
     props.addKeg(
       {
         name: _name.value,
         brand: _brand.value,
-        price: _price.value,
-        alcoholContent: _alcoholContent.value
+        price: _floatPrice,
+        alcoholContent: _floatAlcoholContent
       }      
     );
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import { Keg } from './Keg';
 import PropTypes from 'prop-types';
 import KegProp from './KegProp';
+import './Keg.css'
 
 function TapSelection(props) {
 
@@ -19,8 +20,8 @@ function TapSelection(props) {
 
   return (
     <div className="beerList">
-      <button >Sort Kegs By Alcohol Content</button>
-      <button >Sort Kegs By Price</button>
+      <button className="kegButton" >Sort Kegs By Alcohol Content</button>
+      <button className="kegButton">Sort Kegs By Price</button>
       {props.kegs.map((keg, index) =>
         <KegProp name={keg.name}
           brand={keg.brand}

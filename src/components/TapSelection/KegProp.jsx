@@ -14,10 +14,10 @@ function KegProp(props){
       <div >
         <p><em>{props.name}</em></p>
         <p><em>{props.brand}</em></p>
-        <p><em>{props.price}</em></p>
-        <p><em>{props.alcoholContent}</em></p>
-        <p><em>{props.pints}</em></p>
-        <button onClick={sellPint}>Sell Pint</button>
+        <p><em>${props.price}</em></p>
+        <p><em>{props.alcoholContent}%</em></p>
+        <p><em>{props.pints} Pints</em>
+        <button className="kegButton smallerButton" onClick={sellPint}>Sell Pint</button></p>
         <hr/>
       </div>
     </div>

@@ -58,7 +58,7 @@ function KegForm(props){
           required
           ref={(input) => {_alcoholContent = input;}}
         /><br/>
-        <button className="addKegButton" type="submit">Add A new Keg</button>
+        <button className="kegButton" type="submit">Add A new Keg</button>
       </form>
       <hr/>
     </div>

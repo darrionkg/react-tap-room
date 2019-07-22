@@ -50,16 +50,16 @@ export class App extends Component {
         <header>
           <Navigation />
         </header>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/selection' render={() => <TapSelection 
-          kegs = {this.state.kegList} 
-          handleSellPint={this.handleSellPint}
-          /> }/>
-          <Route path='/newkeg' render={() => <KegForm addKeg = {this.handleAddingNewKegToList}/> }/>
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/about' component={About} />
+            <Route path='/selection' render={() => <TapSelection 
+            kegs = {this.state.kegList} 
+            handleSellPint={this.handleSellPint}
+            /> }/>
+            <Route path='/newkeg' render={() => <KegForm addKeg = {this.handleAddingNewKegToList}/> }/>
 
-        </Switch>
+          </Switch>
       </div>
     );
   }

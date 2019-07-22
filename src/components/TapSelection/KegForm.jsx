@@ -26,33 +26,39 @@ function KegForm(props){
   return (
     <div className="formContainer">
       <form onSubmit={handleNewKeg}>
-        Name
+        Name<br/>
         <input 
+          className="addKegInput"
           id="name" 
           type="text" 
           required
           ref={(input) => {_name = input;}}
-        />
-        Brand
-        <input id="brand" 
+        /><br/>
+        Brand<br/>
+        <input 
+          className="addKegInput"
+          id="brand" 
           type="text" 
           required
           ref={(input) => {_brand = input;}}
-        />
-        Price
-        <input id="price"
+        /><br/>
+        Price<br/>
+        <input 
+          className="addKegInput"
+          id="price"
           type="text"
           required
           ref={(input) => {_price = input;}}
-        />
-        Alcohol%
+        /><br/>
+        Alcohol%<br/>
         <input 
+          className="addKegInput"
           id="alcoholContent" 
           type="text" 
           required
           ref={(input) => {_alcoholContent = input;}}
-        />
-        <button type="submit">Add A new Keg</button>
+        /><br/>
+        <button className="addKegButton" type="submit">Add A new Keg</button>
       </form>
       <hr/>
     </div>

@@ -1,10 +1,37 @@
 p {
-  color: gray;
+  color: #3E2C22;
 }
 
 .formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  width: 200px;
-  height: 250px;
-  margin-top: 200px;
+  width: 300px;
+  height: 350px;
+  margin: 20% auto auto auto;
+  background-color: #3E2C22; 
+}
+
+.formContainer form {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.addKegInput {
+  font-size: 20px;
+  height: 20px;
+  /* font-weight: bold; */
+  background-color: rgb(82, 59, 47);
+  color: white;
+}
+
+.addKegButton {
+  font-size: 20px;
+  height: 40px;
+  margin: 10px;
+  background-color: rgb(82, 59, 47);
+  color: white;
 }

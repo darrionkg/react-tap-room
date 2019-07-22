@@ -6,29 +6,42 @@
   top: 0;
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: #031926;
   width: inherit;
-  height: inherit;
+  height: 60px;
 }
 
-#navBar ul, #navBar nav, #navBar a {
+#navBar ul, #navBar nav {
   width: 100%;
-  height: 10%;
+  height: 20%;
   top: 0;
   margin: 0;
   padding: 0;
+}
+
+#navBar a {
   list-style-type: none;
+  text-decoration: none;
+}
+
+#navBar a:hover {
+  color: red;
+}
+
+.navList {
+  margin: 0;
+  padding: 0;
 }
 
 .navInline {
   display: inline;
   margin: 10%;
-  color: white;
+  color: #FFE1A8;
   text-align: center;
 }
 
 .navLink {
-  color: white;
+  color: #FFE1A8;
   opacity: 50%;
   line-height: 50px;
 }
@@ -43,20 +56,30 @@
   position: absolute;
   left: 2em;
   flex-direction: wrap;
-  width: 15%;
-  height: 50px;
+  width: 150px;
+  height: 60px;
 }
 
 .homeButton a {
   line-height: -5em;
 }
+
 .smallIcon {
-  width: 40px;
-  height: 40px;
+
+  width: 50px;
+  height: 50px;
   position: absolute;
   top: 0;
 }
 
+.linkDiv {
+  width: 150px;
+  text-align: center;
+}
 .linkContainer {
   width: 80%;
+}
+
+.navInline {
+  height: 65px;
 }

@@ -7,19 +7,26 @@ export class Navigation extends Component {
     return (
       <div>
           <nav>
-            <ul>
+            <ul className="navList">
         <div id="navBar">
+              <Link className="navLink" to="/">
               <div className="homeButton">
                 <li className="navInline">
                 <img className="smallIcon" src={require("./../../assets/figIcon.png")}/>
-                <Link className="navLink" to="/">Brewskis</Link>
                 </li>
               </div>
-              <div className="linkContainer">
-              <li className="navInline"><Link className="navLink" to="/about">About Us</Link></li>
-              <li className="navInline"><Link className="navLink" to="/selection">Tap Selection</Link></li>
-              <li className="navInline"><Link className="navLink" to="/newkeg">New Keg</Link></li>
-              </div>
+              </Link>
+              {/* <div className="linkContainer"> */}
+                <Link className="navLink" to="/about"><div className="linkDiv">  
+                 <li className="navInline">About Us</li>
+                </div></Link>
+                <Link className="navLink" to="/selection"><div className="linkDiv">
+                <li className="navInline">Tap Selection</li>
+                </div></Link>
+                <Link className="navLink" to="/newkeg"><div className="linkDiv">
+                <li className="navInline">New Keg</li>
+                </div></Link>
+              {/* </div> */}
         </div>
             </ul>
           </nav>

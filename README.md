@@ -29,6 +29,8 @@ _ My taproom's website, built with React.js_
 | 8. As a patron, all kegs should be color-coded for easy readability |
 | 9. As a patron, I want to be able to sort by alcohol content |
 
+# Wireframe
+![ComponentStructure](./src/assets/tap-room-diagram.jpg)
 ## Support and contact details
 
 darrionkg@gmail.com

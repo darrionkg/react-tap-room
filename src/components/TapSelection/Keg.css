@@ -28,6 +28,13 @@ p {
   color: white;
 }
 
+.flexSpaced{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-bottom: 2px solid rgb(82, 59, 47);
+}
+
 .kegButton {
   font-size: 20px;
   height: 40px;
@@ -38,7 +45,6 @@ p {
 }
 
 .smallerButton {
-  float: center;
   height: 30px;
   font-size: 14px;
   margin: 15px;

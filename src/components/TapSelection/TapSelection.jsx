@@ -20,8 +20,10 @@ function TapSelection(props) {
 
   return (
     <div className="beerList">
-      <button className="kegButton" >Sort Kegs By Alcohol Content</button>
-      <button className="kegButton">Sort Kegs By Price</button>
+      <div className="flexSpaced">
+        <button className="kegButton" >Sort Kegs By Alcohol Content</button>
+        <button className="kegButton">Sort Kegs By Price</button>
+      </div>
       {props.kegs.map((keg, index) =>
         <KegProp name={keg.name}
           brand={keg.brand}

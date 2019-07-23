@@ -34,7 +34,6 @@ function TapSelection(props) {
           id={index}
           key={index} />,
           )}
-
     </div>
   );
 }

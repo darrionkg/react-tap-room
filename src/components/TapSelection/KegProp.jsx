@@ -16,7 +16,7 @@ function KegProp(props){
         <p><em>${props.price}</em></p>
         <p><em>{props.alcoholContent}%</em></p>
         <p><em>{props.pints} Pints</em>
-        <button className="kegButton smallerButton" onClick={() => sellPint(props.id)}>Sell Pint</button></p>
+          <button className="kegButton smallerButton" onClick={() => sellPint(props.id)}>Sell Pint</button></p>
         <hr/>
       </div>
     </div>
@@ -35,4 +35,4 @@ export default KegProp;
 
 KegProp.propTypes = {
   handleSellPint: PropTypes.func
-}
+};

@@ -24,10 +24,6 @@
   text-decoration: none;
 }
 
-#navBar a:hover {
-  color: red;
-}
-
 .navList {
   margin: 0;
   padding: 0;

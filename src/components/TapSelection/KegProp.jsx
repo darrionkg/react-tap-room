@@ -4,9 +4,9 @@ import './Keg.css';
 
 function KegProp(props){
 
-  function sellPint() {
-    console.log("test");
-    props.handleSellPint;
+  function sellPint(id) {
+    console.log(id);
+    props.handleSellPint(id);
   }
 
   return (
@@ -17,7 +17,7 @@ function KegProp(props){
         <p><em>${props.price}</em></p>
         <p><em>{props.alcoholContent}%</em></p>
         <p><em>{props.pints} Pints</em>
-        <button className="kegButton smallerButton" onClick={sellPint}>Sell Pint</button></p>
+        <button className="kegButton smallerButton" onClick={() => sellPint(props.id)}>Sell Pint</button></p>
         <hr/>
       </div>
     </div>

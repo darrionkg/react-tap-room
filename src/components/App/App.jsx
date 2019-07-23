@@ -39,8 +39,12 @@ export class App extends Component {
     this.setState({kegList: newKegList});
   }
 
-  handleSellPint() {
-    console.log("handleSellPint in app")
+  handleSellPint(id) {
+    if(this.state.kegList[id].pints > 0) {
+
+      this.state.kegList[id].pints -= 1;
+    }
+    this.setState(this.state.kegList);
   }
 
 

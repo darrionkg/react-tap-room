@@ -6,22 +6,23 @@ import './Keg.css'
 
 function TapSelection(props) {
 
-  // function sortKegsByAlcoholContent() {
-  //   let newKegs = props.kegs.sort((a, b) => a.alcoholContent-b.alcoholContent);
-  //   console.log(newKegs);
-  // }
-  // function sortKegsByPrice() {
-  //   props.kegs = props.kegs.sort((a, b) => a.price-b.price);
-  // }
+  function sortKegsByAlcoholContent() {
+    let newKegs = props.kegs.sort((a, b) => a.alcoholContent-b.alcoholContent);
+    // props.kegs.setState(newKegs);
+    console.log(props.kegs);
+  }
+  function sortKegsByPrice() {
+    props.kegs = props.kegs.sort((a, b) => a.price-b.price);
+  }
 
-  function handleSellPint() {
-    console.log("handleSellPint tapSelection");
+  function handleSellPint(id) {
+    props.handleSellPint(id);
   }
 
   return (
     <div className="beerList">
       <div className="flexSpaced">
-        <button className="kegButton" >Sort Kegs By Alcohol Content</button>
+        <button onClick={() => sortKegsByAlcoholContent()} className="kegButton" >Sort Kegs By Alcohol Content</button>
         <button className="kegButton">Sort Kegs By Price</button>
       </div>
       {props.kegs.map((keg, index) =>
@@ -30,7 +31,8 @@ function TapSelection(props) {
           price={keg.price}
           alcoholContent={keg.alcoholContent}
           pints={keg.pints}
-          handleSellPint={handleSellPint()}
+          handleSellPint={handleSellPint}
+          id={index}
           key={index} />,
           )}
 

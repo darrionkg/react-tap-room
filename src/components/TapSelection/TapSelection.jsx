@@ -7,12 +7,11 @@ import './Keg.css'
 function TapSelection(props) {
 
   function sortKegsByAlcoholContent() {
-    let newKegs = props.kegs.sort((a, b) => a.alcoholContent-b.alcoholContent);
-    // props.kegs.setState(newKegs);
-    console.log(props.kegs);
+    props.sortByAlcohol();
   }
+
   function sortKegsByPrice() {
-    props.kegs = props.kegs.sort((a, b) => a.price-b.price);
+    props.sortByPrice();
   }
 
   function handleSellPint(id) {
@@ -23,7 +22,7 @@ function TapSelection(props) {
     <div className="beerList">
       <div className="flexSpaced">
         <button onClick={() => sortKegsByAlcoholContent()} className="kegButton" >Sort Kegs By Alcohol Content</button>
-        <button className="kegButton">Sort Kegs By Price</button>
+        <button onClick={() => sortKegsByPrice()} className="kegButton">Sort Kegs By Price</button>
       </div>
       {props.kegs.map((keg, index) =>
         <KegProp name={keg.name}
@@ -44,5 +43,7 @@ export default TapSelection;
 
 TapSelection.propTypes = {
   kegs: PropTypes.array,
-  handleSellPint: PropTypes.func
+  handleSellPint: PropTypes.func,
+  sortByAlcohol: PropTypes.func,
+  sortByPrice: PropTypes.func
 }

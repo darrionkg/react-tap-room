@@ -29,6 +29,8 @@ export class App extends Component {
     };
     this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
     this.handleSellPint = this.handleSellPint.bind(this);
+    this.handleSortByAlcohol = this.handleSortByAlcohol.bind(this);
+    this.handleSortByPrice = this.handleSortByPrice.bind(this);
   }
 
   handleAddingNewKegToList(newKeg){
@@ -47,6 +49,15 @@ export class App extends Component {
     this.setState(this.state.kegList);
   }
 
+  handleSortByAlcohol() {
+    this.state.kegList.sort((a, b) => a.alcoholContent-b.alcoholContent);
+    this.setState(this.state.kegList);
+  }
+
+  handleSortByPrice() {
+    this.state.kegList.sort((a, b) => a.price-b.price);
+    this.setState(this.state.kegList);
+  }
 
   render() {
     return (
@@ -58,8 +69,10 @@ export class App extends Component {
             <Route exact path='/' component={Home} />
             <Route path='/about' component={About} />
             <Route path='/selection' render={() => <TapSelection 
-            kegs = {this.state.kegList} 
+            kegs = {this.state.kegList}
             handleSellPint={this.handleSellPint}
+            sortByAlcohol={this.handleSortByAlcohol}
+            sortByPrice={this.handleSortByPrice}
             /> }/>
             <Route path='/newkeg' render={() => <KegForm addKeg = {this.handleAddingNewKegToList}/> }/>
 

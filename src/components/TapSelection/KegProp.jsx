@@ -5,7 +5,6 @@ import './Keg.css';
 function KegProp(props){
 
   function sellPint(id) {
-    console.log(id);
     props.handleSellPint(id);
   }
 

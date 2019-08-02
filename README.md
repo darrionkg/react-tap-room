@@ -5,7 +5,7 @@
 #### By _**Darrion Gering**_
 
 ## Description
-_ My taproom's website, built with React.js_
+_ My taproom's website, built with React.js, using vanilla css for styling_
 
 ## Setup/Installation Requirements
 
@@ -31,6 +31,10 @@ _ My taproom's website, built with React.js_
 
 # Wireframe
 ![ComponentStructure](./src/assets/tap-room-diagram.jpg)
+
+# Site 
+![ComponentStructure](./HomePage.png)
+
 ## Support and contact details
 
 darrionkg@gmail.com
